@@ -2,6 +2,10 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
     # render html: @products.to_json
+
+    # Dir.chdir("./app/assets/images")
+    # @testpic = Dir.glob("*.{jpg,png}")
+    # render html: @testpic.to_json
   end
 
   def show
