@@ -39,6 +39,8 @@ Rails.application.routes.draw do
     member do
       get :pay_with_credit_card
       post :pay2go_cc_notify
+      get :pay_with_atm
+      post :pay2go_atm_notify
     end
   end
 
